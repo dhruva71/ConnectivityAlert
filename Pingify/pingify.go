@@ -13,7 +13,7 @@ func DisplayNotification(connectStatus bool) {
 			panic(e)
 		}
 	} else {
-		e := beeep.Notify("ConnectivityAlert", "Connected",
+		e := beeep.Notify("ConnectivityAlert", "Connected","")
 		if e != nil {
 			panic(e)
 		}
