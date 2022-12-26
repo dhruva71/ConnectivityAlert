@@ -8,12 +8,12 @@ import (
 // returns true if connected, false if not
 func DisplayNotification(connectStatus bool) {
 	if connectStatus == false {
-		e := beeep.Notify("OnlineChecker", "Disconnected", "")
+		e := beeep.Notify("ConnectivityAlert", "Disconnected","")
 		if e != nil {
 			panic(e)
 		}
 	} else {
-		e := beeep.Notify("OnlineChecker", "Connected", "")
+		e := beeep.Notify("ConnectivityAlert", "Connected",
 		if e != nil {
 			panic(e)
 		}
